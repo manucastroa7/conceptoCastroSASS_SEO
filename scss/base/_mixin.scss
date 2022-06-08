@@ -1,0 +1,17 @@
+@mixin flex ($flex, $content) { 
+
+    display: $flex;
+    justify-content: $content;
+
+}
+
+@mixin h2 ($animation, $duration, $fontStyle) {
+    animation: $animation;
+    animation-duration: $duration;
+    font-style: $fontStyle;
+
+
+}
+
+
+ 

@@ -1,0 +1,456 @@
+// nesting
+@import "base/variables";
+@import "mediaqueries";
+@import "base/mixin";
+
+header {
+    @include flex (flex, space-evenly);
+    /* display: flex;
+    justify-content: space-evenly; */
+    align-items: center;
+    background-color: $color-principal;
+
+    .logoHeader img {
+        width: 150px;
+    }
+
+    nav.navbar {
+        background-color: $color-principal;
+        font-size: large;
+
+        .nav-item {
+            margin: 2rem;
+        }
+
+        .dropdown-menu {
+            background-color: $color-principal;
+
+        }
+    }
+
+    .logoIG {
+        margin: 1rem;
+        width: $medida-principal + 10;
+    }
+
+    .logoFB {
+        margin: 1rem;
+        width: $medida-principal + 10;
+    }
+}
+
+main {
+    .tituloPrincipal {
+        @include flex (flex, center);
+        /* display: flex;
+        justify-content: center; */
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+
+        z-index: 1;
+        color: $color-texto;
+        background-color: $color-main;
+        opacity: 70%;
+
+        h1 {
+            font-size: 100px;
+            font-family: 'Square Peg', cursive;
+            text-align: center;
+            z-index: 1;
+            animation: fadeIn;
+            animation-duration: 10s;
+        }
+
+    }
+
+    .video {
+        margin: 0px;
+        background-color: $color-main ;
+
+        iframe {
+            width: 100%;
+            height: 800px;
+        }
+
+    }
+}
+
+section {
+    .actividades {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        color: $color-texto;
+        background-color: #126455;
+        text-align: center;
+
+        h2 {
+            animation: fadeIn;
+            animation-duration: 10s;
+
+        }
+    }
+}
+
+section {
+    .actividadesGiras {
+        @include flex (flex, center);
+        /* display: flex;
+        justify-items: center; */
+        background-color: $color-section;
+        padding: $medida-principal + 30;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            @include h2 (fadeIn, 10s, italic);
+            /* animation: fadeIn;
+            animation-duration: 10s;
+            font-style: italic; */
+        }
+
+        p {
+            animation: fadeIn;
+            animation-duration: 10s;
+            margin: $medida-principal + 30;
+            font-size: 1.2rem;
+        }
+
+        img {
+            margin: $medida-principal;
+            width: 500px;
+            height: 350px;
+
+            &:hover {
+                width: 600px;
+            }
+
+        }
+
+    }
+}
+
+section {
+    .actividadesIndividuales {
+        @include flex (flex, center);
+        /* 
+        display: flex;
+        justify-content: center; */
+        background-color: $color-section;
+        padding: $medida-principal + 30;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            @include h2 (fadeIn, 10s, italic);
+
+        }
+
+        p {
+            margin: $medida-principal + 30;
+            font-size: 1.2rem;
+            animation: fadeIn;
+            animation-duration: 10s;
+
+        }
+
+        img {
+            margin: $medida-principal;
+            width: 500px;
+            height: 350px;
+
+            &:hover {
+                width: 600px;
+            }
+
+        }
+    }
+}
+
+footer {
+    @include flex (flex, space-between);
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+    margin: 0px 0px;
+    background-color: $color-footer;
+
+
+    .logoConcepto {
+
+        width: 40%
+    }
+
+    img {
+        margin: 0px 20px 0px 60px;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .datosContacto {
+        padding: $medida-principal + 10;
+        margin-right: $medida-principal + 30;
+        text-align: right;
+
+        h3 {
+            color: black;
+            font-size: 1.2rem;
+
+        }
+
+        ul {
+            li {
+                color: black;
+                font-size: 1rem;
+                list-style-type: none;
+            }
+        }
+    }
+
+
+
+}
+
+// VIAJES A MEDIDA
+
+.viajesAMedidaMain {
+    background-color: $color-main;
+
+    .tituloViajes {
+        h1 {
+            text-align: center;
+            color: $color-texto;
+            animation: fadeIn;
+            animation-duration: 5s;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+    }
+}
+
+.contenedorGrupales {
+    background-color: $color-section;
+
+    .subtituloGrupales {
+        h2 {
+            color: $color-texto;
+            animation: fadeIn;
+            animation-duration: 5s;
+            text-align: start;
+            margin-left: $medida-principal;
+            padding-top: $medida-principal;
+        }
+    }
+
+    .grupales {
+        @include flex (flex, left);
+        /* display: flex;
+        justify-content: left;
+ */
+
+        .imagenGrupales {
+            img {
+                margin: $medida-principal;
+                animation: fadeIn;
+                animation-duration: 5s;
+            }
+        }
+
+        .parrafoGrupales {
+            p {
+                color: $color-texto;
+                margin: $medida-principal;
+                animation: fadeIn;
+                animation-duration: 5s;
+            }
+        }
+    }
+}
+
+.contenedorIndividuales {
+    background-color: $color-section;
+
+    .subtituloIndividuales {
+
+        h2 {
+            color: $color-texto;
+            animation: fadeIn;
+            animation-duration: 5s;
+            text-align: start;
+            margin-left: $medida-principal;
+            padding-top: $medida-principal;
+        }
+    }
+
+    .individuales {
+        @include flex (flex, left);
+
+        /* display: flex;
+        justify-content: left;
+ */
+        img {
+            margin: $medida-principal;
+            animation: fadeIn;
+            animation-duration: 5s;
+        }
+
+        p {
+            color: $color-texto;
+            margin: $medida-principal;
+            animation: fadeIn;
+            animation-duration: 5s;
+        }
+    }
+}
+
+// CONTACTO
+
+.tituloFormulario {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    background-color: #126455;
+    text-align: center;
+    font-size: 1rem;
+    display: inline-block;
+
+    h1 {
+        animation: fadeIn;
+        animation-duration: 10s;
+    }
+}
+
+
+.mainFormulario {
+    color: $color-texto;
+    background-color: $color-main;
+
+    .contenedorFormulario {
+
+        .formulario {
+            margin: 20px 30px 20px 20px;
+            padding: 0px 0px 0px 0px;
+            border: black solid 5px;
+            background-color: $color-principal;
+            animation: fadeIn;
+            animation-duration: 10s;
+
+            fieldset {
+                legend {
+                    color: white;
+                    margin: 30px;
+                }
+
+                div {
+                    label {
+                        color: $color-texto;
+                        margin: 20px;
+                        margin-bottom: 20px;
+                        padding: 20px;
+                    }
+                }
+
+                //APLICANDO EXTEND
+                div {
+                    .btnEnviar {
+                        border-radius: 1rem;
+                        margin: $medida-principal + 30;
+                        padding: $medida-principal;
+                        background-color: green;
+
+                    }
+
+                    .btnResetear {
+                        @extend .btnEnviar;
+                        background-color: yellow;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.ubicacion {
+    color: white;
+    padding: 20px;
+    background-color: #5E8B7E;
+
+    h2 {
+        margin: 20px;
+        margin-bottom: 10px;
+        animation: fadeIn;
+        animation-duration: 10s;
+    }
+
+    p {
+        margin: 20px;
+        animation: fadeIn;
+        animation-duration: 10s;
+    }
+
+
+    .imagenUbicacion {
+        img {
+            display: flex;
+            justify-content: center;
+            animation: fadeIn;
+            animation-duration: 10s;
+        }
+    }
+}
+
+//NOSOTROS
+
+main {
+    background-color: $color-main2;
+
+    .tituloNosotros {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: white;
+        background-color: #126455;
+        text-align: center;
+        font-size: 1rem;
+
+        h1 {
+            animation: fadeIn;
+            animation-duration: 5s;
+        }
+    }
+
+    .nosotros {
+        @include flex (flex, left);
+
+        img {
+            margin: 20px;
+            animation: fadeIn;
+            animation-duration: 5s;
+        }
+
+        .parrafoNosotros {
+            p {
+                color: white;
+                margin: 20px;
+                animation: fadeIn;
+                animation-duration: 5s;
+            }
+        }
+    }
+}
+
+// GIRAS DEPORTIVAS
+
+main {
+    .tituloGiras {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: white;
+        background-color: #126455;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+

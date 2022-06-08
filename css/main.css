@@ -1,0 +1,432 @@
+@media screen and (max-width: 400px) {
+  .tituloPrincipal h1 {
+    font-size: 3rem; }
+  .redesSociales {
+    display: none; }
+  .video {
+    width: auto; }
+  header {
+    justify-content: start; }
+  footer img {
+    display: none; }
+  .datosContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem; }
+  .datosContacto__subtitulo {
+    font-size: 1rem; }
+  .section1 {
+    margin: 0px; }
+  .section2 img {
+    margin: 0px;
+    width: 200px;
+    height: 150px; }
+  .section3 img {
+    margin: 0px;
+    width: 200px;
+    height: 150px; }
+  .containerPrincipal {
+    height: auto;
+    display: grid;
+    grid-template-areas: "header" "main" "section1" "section2 " "section3" "footer"; }
+  .containerContacto {
+    height: auto;
+    display: grid;
+    grid-template-areas: "header" "titulo" "formulario" "ubicacion" "footer"; }
+  .containerViajesAMedida {
+    height: auto;
+    display: grid;
+    grid-template-areas: "header" "tituloViajes" "grupales" "individuales" "footer"; }
+  .containerNosotros {
+    height: auto;
+    display: grid;
+    grid-template-areas: "header" "nosotros" "footer"; }
+  .nosotrosM {
+    display: flex;
+    flex-direction: column; }
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-size: small;
+    text-align: center; }
+  .imagenNosotros img {
+    width: 300px; }
+  .tituloViajes h1 {
+    font-size: medium;
+    text-align: center; }
+  .subtituloGrupales h2 {
+    font-size: medium; }
+  .subtituloIndividuales h2 {
+    font-size: medium; }
+  .grupales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: small;
+    text-align: center; }
+  .imagenGrupales img {
+    width: 200px; }
+  .individuales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-size: small;
+    text-align: center; }
+  .imagenIndividuales img {
+    width: 250px; }
+  section .tituloFormulario {
+    font-size: 1.2rem;
+    text-align: center; }
+  .imagenUbicacion {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: 20px; }
+  .mainformulario {
+    width: auto; } }
+
+@media screen and (max-width: 1024px) {
+  header {
+    justify-content: center; }
+    header .redesSociales {
+      display: none; } }
+
+main .tituloPrincipal h1 {
+  font-size: 4rem; }
+
+main .video iframe {
+  width: auto; }
+
+footer img {
+  width: 15%; }
+
+footer .datosContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+footer .datosContacto__subtitulo h3 {
+  font-size: 1.2rem; }
+
+.section1 {
+  margin: 0px; }
+
+.section2 img {
+  margin: 0px;
+  width: 200px;
+  height: 150px; }
+
+.section3 img {
+  margin: 0px;
+  width: 200px;
+  height: 150px; }
+
+.containerPrincipal {
+  height: auto;
+  display: grid;
+  grid-template-areas: "header" "main" "section1" "section2 " "section3" "footer"; }
+
+.containerContacto {
+  height: auto;
+  display: grid;
+  grid-template-areas: "header" "titulo" "formulario" "ubicacion" "footer"; }
+
+.containerViajesAMedida {
+  height: auto;
+  display: grid;
+  grid-template-areas: "header" "tituloViajes" "grupales" "individuales" "footer"; }
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  /* display: flex;
+    justify-content: space-evenly; */
+  align-items: center;
+  background-color: #206A5D; }
+  header .logoHeader img {
+    width: 150px; }
+  header nav.navbar {
+    background-color: #206A5D;
+    font-size: large; }
+    header nav.navbar .nav-item {
+      margin: 2rem; }
+    header nav.navbar .dropdown-menu {
+      background-color: #206A5D; }
+  header .logoIG {
+    margin: 1rem;
+    width: 30px; }
+  header .logoFB {
+    margin: 1rem;
+    width: 30px; }
+
+main .tituloPrincipal {
+  display: flex;
+  justify-content: center;
+  /* display: flex;
+        justify-content: center; */
+  width: 100%;
+  position: absolute;
+  flex-direction: column;
+  z-index: 1;
+  color: white;
+  background-color: #5E8B7E;
+  opacity: 70%; }
+  main .tituloPrincipal h1 {
+    font-size: 100px;
+    font-family: 'Square Peg', cursive;
+    text-align: center;
+    z-index: 1;
+    animation: fadeIn;
+    animation-duration: 10s; }
+
+main .video {
+  margin: 0px;
+  background-color: #5E8B7E; }
+  main .video iframe {
+    width: 100%;
+    height: 800px; }
+
+section .actividades {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  background-color: #126455;
+  text-align: center; }
+  section .actividades h2 {
+    animation: fadeIn;
+    animation-duration: 10s; }
+
+section .actividadesGiras {
+  display: flex;
+  justify-content: center;
+  /* display: flex;
+        justify-items: center; */
+  background-color: #85d8c9;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center; }
+  section .actividadesGiras h2 {
+    animation: fadeIn;
+    animation-duration: 10s;
+    font-style: italic;
+    /* animation: fadeIn;
+            animation-duration: 10s;
+            font-style: italic; */ }
+  section .actividadesGiras p {
+    animation: fadeIn;
+    animation-duration: 10s;
+    margin: 50px;
+    font-size: 1.2rem; }
+  section .actividadesGiras img {
+    margin: 20px;
+    width: 500px;
+    height: 350px; }
+    section .actividadesGiras img:hover {
+      width: 600px; }
+
+section .actividadesIndividuales {
+  display: flex;
+  justify-content: center;
+  /* 
+        display: flex;
+        justify-content: center; */
+  background-color: #85d8c9;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center; }
+  section .actividadesIndividuales h2 {
+    animation: fadeIn;
+    animation-duration: 10s;
+    font-style: italic; }
+  section .actividadesIndividuales p {
+    margin: 50px;
+    font-size: 1.2rem;
+    animation: fadeIn;
+    animation-duration: 10s; }
+  section .actividadesIndividuales img {
+    margin: 20px;
+    width: 500px;
+    height: 350px; }
+    section .actividadesIndividuales img:hover {
+      width: 600px; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  /* display: flex;
+    justify-content: space-between; */
+  align-items: center;
+  margin: 0px 0px;
+  background-color: #F1F1E8; }
+  footer .logoConcepto {
+    width: 40%; }
+  footer img {
+    margin: 0px 20px 0px 60px;
+    width: 6rem;
+    height: 6rem; }
+  footer .datosContacto {
+    padding: 30px;
+    margin-right: 50px;
+    text-align: right; }
+    footer .datosContacto h3 {
+      color: black;
+      font-size: 1.2rem; }
+    footer .datosContacto ul li {
+      color: black;
+      font-size: 1rem;
+      list-style-type: none; }
+
+.viajesAMedidaMain {
+  background-color: #5E8B7E; }
+  .viajesAMedidaMain .tituloViajes h1 {
+    text-align: center;
+    color: white;
+    animation: fadeIn;
+    animation-duration: 5s;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.contenedorGrupales {
+  background-color: #85d8c9; }
+  .contenedorGrupales .subtituloGrupales h2 {
+    color: white;
+    animation: fadeIn;
+    animation-duration: 5s;
+    text-align: start;
+    margin-left: 20px;
+    padding-top: 20px; }
+  .contenedorGrupales .grupales {
+    display: flex;
+    justify-content: left;
+    /* display: flex;
+        justify-content: left;
+ */ }
+    .contenedorGrupales .grupales .imagenGrupales img {
+      margin: 20px;
+      animation: fadeIn;
+      animation-duration: 5s; }
+    .contenedorGrupales .grupales .parrafoGrupales p {
+      color: white;
+      margin: 20px;
+      animation: fadeIn;
+      animation-duration: 5s; }
+
+.contenedorIndividuales {
+  background-color: #85d8c9; }
+  .contenedorIndividuales .subtituloIndividuales h2 {
+    color: white;
+    animation: fadeIn;
+    animation-duration: 5s;
+    text-align: start;
+    margin-left: 20px;
+    padding-top: 20px; }
+  .contenedorIndividuales .individuales {
+    display: flex;
+    justify-content: left;
+    /* display: flex;
+        justify-content: left;
+ */ }
+    .contenedorIndividuales .individuales img {
+      margin: 20px;
+      animation: fadeIn;
+      animation-duration: 5s; }
+    .contenedorIndividuales .individuales p {
+      color: white;
+      margin: 20px;
+      animation: fadeIn;
+      animation-duration: 5s; }
+
+.tituloFormulario {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  background-color: #126455;
+  text-align: center;
+  font-size: 1rem;
+  display: inline-block; }
+  .tituloFormulario h1 {
+    animation: fadeIn;
+    animation-duration: 10s; }
+
+.mainFormulario {
+  color: white;
+  background-color: #5E8B7E; }
+  .mainFormulario .contenedorFormulario .formulario {
+    margin: 20px 30px 20px 20px;
+    padding: 0px 0px 0px 0px;
+    border: black solid 5px;
+    background-color: #206A5D;
+    animation: fadeIn;
+    animation-duration: 10s; }
+    .mainFormulario .contenedorFormulario .formulario fieldset legend {
+      color: white;
+      margin: 30px; }
+    .mainFormulario .contenedorFormulario .formulario fieldset div label {
+      color: white;
+      margin: 20px;
+      margin-bottom: 20px;
+      padding: 20px; }
+    .mainFormulario .contenedorFormulario .formulario fieldset div .btnEnviar, .mainFormulario .contenedorFormulario .formulario fieldset div .btnResetear {
+      border-radius: 1rem;
+      margin: 50px;
+      padding: 20px;
+      background-color: green; }
+    .mainFormulario .contenedorFormulario .formulario fieldset div .btnResetear {
+      background-color: yellow; }
+
+.ubicacion {
+  color: white;
+  padding: 20px;
+  background-color: #5E8B7E; }
+  .ubicacion h2 {
+    margin: 20px;
+    margin-bottom: 10px;
+    animation: fadeIn;
+    animation-duration: 10s; }
+  .ubicacion p {
+    margin: 20px;
+    animation: fadeIn;
+    animation-duration: 10s; }
+  .ubicacion .imagenUbicacion img {
+    display: flex;
+    justify-content: center;
+    animation: fadeIn;
+    animation-duration: 10s; }
+
+main {
+  background-color: #37a08d; }
+  main .tituloNosotros {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    background-color: #126455;
+    text-align: center;
+    font-size: 1rem; }
+    main .tituloNosotros h1 {
+      animation: fadeIn;
+      animation-duration: 5s; }
+  main .nosotros {
+    display: flex;
+    justify-content: left; }
+    main .nosotros img {
+      margin: 20px;
+      animation: fadeIn;
+      animation-duration: 5s; }
+    main .nosotros .parrafoNosotros p {
+      color: white;
+      margin: 20px;
+      animation: fadeIn;
+      animation-duration: 5s; }
+
+main .tituloGiras {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  background-color: #126455;
+  text-align: center;
+  font-size: 1rem; }

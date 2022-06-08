@@ -1,0 +1,278 @@
+@media screen and (max-width:400px) {
+
+    .tituloPrincipal h1 {
+        font-size: 3rem;
+    }
+
+    .redesSociales {
+        display: none;
+    }
+
+    .video {
+        width: auto;
+    }
+
+    header {
+        justify-content: start;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    .datosContacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .datosContacto__subtitulo {
+
+        font-size: 1rem;
+
+    }
+
+    .section1 {
+        margin: 0px;
+    }
+
+    .section2 img {
+        margin: 0px;
+        width: 200px;
+        height: 150px;
+
+    }
+
+    .section3 img {
+        margin: 0px;
+        width: 200px;
+        height: 150px;
+    }
+
+    .containerPrincipal {
+        height: auto;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section1"
+            "section2 "
+            "section3"
+            "footer";
+    }
+
+    .containerContacto {
+        height: auto;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "titulo"
+            "formulario"
+            "ubicacion"
+            "footer";
+    }
+
+    .containerViajesAMedida {
+        height: auto;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "tituloViajes"
+            "grupales"
+            "individuales"
+            "footer";
+    }
+
+
+    .containerNosotros {
+        height: auto;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nosotros"
+            "footer";
+    }
+
+
+
+    .nosotrosM {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        font-size: small;
+        text-align: center;
+    }
+
+    .imagenNosotros img {
+        width: 300px;
+    }
+
+    .tituloViajes h1 {
+        font-size: medium;
+        text-align: center;
+
+    }
+
+    .subtituloGrupales h2 {
+        font-size: medium;
+    }
+
+    .subtituloIndividuales h2 {
+        font-size: medium;
+    }
+
+
+    .grupales {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: left;
+        font-size: small;
+        text-align: center;
+    }
+
+    .imagenGrupales img {
+        width: 200px;
+    }
+
+    .individuales {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        font-size: small;
+        text-align: center;
+    }
+
+    .imagenIndividuales img {
+        width: 250px;
+    }
+
+    section .tituloFormulario {
+        font-size: 1.2rem;
+        text-align: center;
+
+    }
+
+    .imagenUbicacion {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        margin: 20px;
+    }
+
+    .mainformulario {
+        width: auto;
+    }
+
+}
+
+
+@media screen and (max-width:1024px) {
+
+    header {
+        justify-content: center;
+
+        .redesSociales {
+
+            display: none;
+        }
+    }
+}
+
+main {
+    .tituloPrincipal {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    .video {
+        iframe {
+
+            width: auto;
+        }
+    }
+}
+
+
+footer {
+    img {
+        width: 15%;
+    }
+
+    .datosContacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .datosContacto__subtitulo {
+        h3 {
+
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.section1 {
+    margin: 0px;
+}
+
+.section2 {
+    img {
+        margin: 0px;
+        width: 200px;
+        height: 150px;
+    }
+
+}
+
+.section3 {
+    img {
+        margin: 0px;
+        width: 200px;
+        height: 150px;
+    }
+}
+
+.containerPrincipal {
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "section1"
+        "section2 "
+        "section3"
+        "footer";
+}
+
+.containerContacto {
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "formulario"
+        "ubicacion"
+        "footer";
+}
+
+.containerViajesAMedida {
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "tituloViajes"
+        "grupales"
+        "individuales"
+        "footer";
+}
